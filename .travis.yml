@@ -1,0 +1,8 @@
+language: cpp
+compiler:
+  - gcc
+notifications:
+  email: false
+script: 
+  - (New-Object System.Net.WebClient).DownloadFile("https://gist.github.com/raw/4291998/72e061810f6478c47dda5c08adf70c29af751cb5/gistfile1.txt","C:/MinGW/msys/1.0/msys.bat")
+  - C:/MinGW/msys/1.0/msys.bat
