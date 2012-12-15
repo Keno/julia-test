@@ -3,6 +3,5 @@ compiler:
   - gcc
 notifications:
   email: false
-script: 
-  - (New-Object System.Net.WebClient).DownloadFile("https://gist.github.com/raw/4291998/gistfile1.txt","C:/MinGW/msys/1.0/msys.bat")
-  - C:/MinGW/msys/1.0/msys.bat
+before_install: (New-Object System.Net.WebClient).DownloadFile("https://gist.github.com/raw/4291998/gistfile1.txt","C:/MinGW/msys/1.0/msys.bat")
+script: C:/MinGW/msys/1.0/msys.bat
