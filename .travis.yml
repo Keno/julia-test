@@ -6,4 +6,4 @@ notifications:
 before_script: 
   - "whoami"
   - "[System.IO.File]::WriteAllText(\"C:/MinGW/msys/1.0/etc/fstab\",\"C:/MinGW /mingw\")"
-script: "C:/MinGW/msys/1.0/bin/bash.exe -i -c \"export PATH=/bin:/mingw/bin:$PATH:/c/Git/bin && rm /c/Git/bin/sed && ls -la /bin && cd /c/ && git clone https://github.com/loladiro/julia.git && cd julia && make\""
+script: "C:/MinGW/msys/1.0/bin/bash.exe -i -c \"export PATH=/bin:/mingw/bin:$PATH:/c/Git/bin && rm /c/Git/bin/sed.exe && ls -la /bin && cd /c/ && git clone https://github.com/loladiro/julia.git && cd julia && make\""
