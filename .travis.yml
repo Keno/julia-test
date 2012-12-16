@@ -3,5 +3,4 @@ compiler:
   - gcc
 notifications:
   email: false
-before_install: (New-Object System.Net.WebClient).DownloadFile("https://gist.github.com/raw/4291998/gistfile1.txt","C:/MinGW/msys/1.0/msys.bat")
-script: C:/MinGW/msys/1.0/msys.bat
+script: C:/MinGW/msys/1.0/bin/bash.exe -i -c "export PATH=$PATH:/c/Git/bin && cd /c/ && git clone https://github.com/loladiro/julia.git && make"
