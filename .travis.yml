@@ -3,5 +3,5 @@ compiler:
   - gcc
 notifications:
   email: false
-before_script: [System.IO.File]::WriteAllText("C:/MinGW/msys/1.0/etc/fstab","C:/MinGW /mingw")
-script: C:/MinGW/msys/1.0/bin/bash.exe -i -c "export PATH=$PATH:/c/Git/bin && cd /c/ && git clone https://github.com/loladiro/julia.git && make"
+before_script: "[System.IO.File]::WriteAllText(\"C:/MinGW/msys/1.0/etc/fstab\",\"C:/MinGW /mingw\")"
+script: "C:/MinGW/msys/1.0/bin/bash.exe -i -c \"export PATH=$PATH:/c/Git/bin && cd /c/ && git clone https://github.com/loladiro/julia.git && make\""
