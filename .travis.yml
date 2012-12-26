@@ -6,7 +6,7 @@ notifications:
 before_script: 
   - "whoami"
   - "[System.IO.File]::WriteAllText(\"C:/MinGW/msys/1.0/etc/fstab\",\"C:/MinGW /mingw`nC:/Git /git\")"
-  - "C:/MinGW/msys/1.0/bin/bash.exe -i --login -c \"mingw-get install msys-perl\""
+  - "C:/MinGW/msys/1.0/bin/bash.exe -l -c \"mingw-get install msys-perl\""
   - "C:/MinGW/msys/1.0/bin/bash.exe -i -c \"mv /c/Git/bin/git.exe /c/Git && rm /c/Git/bin/msys-*.dll && rm /c/Git/bin/*.exe && mv /c/Git/git.exe /c/Git/bin\""
 script: "C:/MinGW/msys/1.0/bin/bash.exe -i -c \"export PATH=.:/git/bin:/usr/local/bin:/bin:/mingw/bin && export GIT_EXEC_PATH=/git/libexec/git-core && cd /c/ && /usr/bin/sed --version && git clone --quiet https://github.com/loladiro/julia.git && cd julia && make\""
 
