@@ -5,6 +5,7 @@ notifications:
   email: false
 before_script: 
   - "whoami"
+  - "winrm get winrm/config/winrs"
   - "[System.IO.File]::WriteAllText(\"C:/MinGW/msys/1.0/etc/fstab\",\"C:/MinGW /mingw`nC:/Git /git\")"
   - "Write-Error \"oops\""
   - "C:/MinGW/msys/1.0/bin/bash.exe -l -c \"mingw-get install msys-perl\""
